@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Enrollment Form</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <header>
+          <h1>Student Enrollment Form</h1>
+     </header>
+
+
+     <section class="instructions">
+          <h3>Instructions</h3>
+          <ol>
+               <li>Fill the forms fields.</li>
+               <li>Check your interests.</li>
+               <li>Click "Enroll Now" to submit.</li>
+          </ol>
+     </section>
+
+
+     <main class="myForms">
+          <h1>Please fill up the following!</h1>
+          <form action="#" method="POST" id="inputs-1">
+               <!-- Full Name -->
+               <label for="full-name">Full Name</label>
+               <input type="text" name="full_name" id="full-name" placeholder="Your full name here" required>
+               
+               <!-- Email Address -->
+               <label for="email">Email Address</label>
+               <input type="email" name="email" id="email" placeholder="Your email address here" required>
+               
+               <!-- Age -->
+               <label for="age">Age</label>
+               <input type="number" name="age" id="age" placeholder="Your age here" required>
+                         
+          </form>
+          <section class="bottom-form">
+               <form action="#" id="inputs-3">
+                    <!-- Label for the interests -->
+                    <h2>Select your interests:</h2>
+                
+                    <!-- Checkboxes for various interests -->
+                    <input type="checkbox" id="web-development" name="interests" value="Web Development">
+                    <label for="web-development">Web Development</label><br>
+                
+                    <input type="checkbox" id="data-science" name="interests" value="Data Science">
+                    <label for="data-science">Data Science</label><br>
+                
+                    <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+                    <label for="graphic-design">Graphic Design</label><br>
+                
+                    <input type="checkbox" id="photography" name="interests" value="Photography">
+                    <label for="photography">Photography</label><br>
+                
+                    <input type="checkbox" id="traveling" name="interests" value="Traveling">
+                    <label for="traveling">Traveling</label><br>
+                
+                    <input type="checkbox" id="gaming" name="interests" value="Gaming">
+                    <label for="gaming">Gaming</label><br>
+                
+                    <input type="checkbox" id="fitness" name="interests" value="Fitness">
+                    <label for="fitness">Fitness</label><br>
+                
+                    <input type="checkbox" id="music" name="interests" value="Music">
+                    <label for="music">Music</label><br>
+                
+                    <input type="checkbox" id="reading" name="interests" value="Reading">
+                    <label for="reading">Reading</label><br>
+                
+                    <input type="checkbox" id="cooking" name="interests" value="Cooking">
+                    <label for="cooking">Cooking</label><br>
+               </form>
+
+               <form action="#" id="inputs-2">
+                    <!-- Sex -->
+                    <h2>Sex</h2>
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="male" value="male" required>
+                    
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female" value="female">
+
+                    <br>
+                    <select id="dropdown" name="dropdown" required>
+                         <option value="" disabled selected>Select your option</option>
+                         <option value="option1">BSIT</option>
+                         <option value="option2">BSAIS</option>
+                         <option value="option3">BSA</option>
+                         <option value="option4">BSE</option>
+                         <option value="option5">DHRS</option>
+                         <option value="option6">BTVTED</option>
+                         <option value="option7">BSPA</option>
+                         <option value="option8">BSSW</option>
+                    </select>
+
+                    <button type="submit">Enroll now!</button>
+               </form>
+          </section>
+     </main>
+
+     <main class="my-table">
+          <h1>Student Datas</h1>
+          <table>
+               <thead>
+                    <tr>
+                         <th>ID</th>
+                         <th>Name</th>
+                         <th>Email</th>
+                         <th>Age</th>
+                         <th>Sex</th>
+                         <th>Course</th>
+                         <th>Interest</th>
+                         </tr>
+               </thead>
+               <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>johndoe@example.com</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development, Gaming</td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>janesmith@example.com</td>
+                    <td>20</td>
+                    <td>Female</td>
+                    <td>BSAIS</td>
+                    <td>Data Science, Photography</td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                    <td>3</td>
+                    <td>Michael Brown</td>
+                    <td>michaelb@example.com</td>
+                    <td>24</td>
+                    <td>Male</td>
+                    <td>BSPA</td>
+                    <td>Sports, Fitness</td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr>
+                    <td>4</td>
+                    <td>Emily White</td>
+                    <td>emilyw@example.com</td>
+                    <td>23</td>
+                    <td>Female</td>
+                    <td>BSW</td>
+                    <td>Reading, Traveling</td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr>
+                    <td>5</td>
+                    <td>David Lee</td>
+                    <td>davidlee@example.com</td>
+                    <td>26</td>
+                    <td>Male</td>
+                    <td>DHRS</td>
+                    <td>Photography, Cooking</td>
+                    </tr>
+                    <!-- Row 6 -->
+                    <tr>
+                    <td>6</td>
+                    <td>Alice Green</td>
+                    <td>alicegreen@example.com</td>
+                    <td>21</td>
+                    <td>Female</td>
+                    <td>BSE</td>
+                    <td>Graphic Design, Music</td>
+                    </tr>
+                    <!-- Row 7 -->
+                    <tr>
+                    <td>7</td>
+                    <td>Chris Black</td>
+                    <td>chrisblack@example.com</td>
+                    <td>27</td>
+                    <td>Male</td>
+                    <td>BSA</td>
+                    <td>Web Development, Fitness</td>
+                    </tr>
+                    <!-- Row 8 -->
+                    <tr>
+                    <td>8</td>
+                    <td>Olivia Harris</td>
+                    <td>oliviaharris@example.com</td>
+                    <td>22</td>
+                    <td>Female</td>
+                    <td>BSAIS</td>
+                    <td>AI, Digital Marketing</td>
+                    </tr>
+                    <!-- Row 9 -->
+                    <tr>
+                    <td>9</td>
+                    <td>Lucas Gray</td>
+                    <td>lucasgray@example.com</td>
+                    <td>28</td>
+                    <td>Male</td>
+                    <td>BSE</td>
+                    <td>Design, Architecture</td>
+                    </tr>
+                    <!-- Row 10 -->
+                    <tr>
+                    <td>10</td>
+                    <td>Sophie Brown</td>
+                    <td>sophiebrown@example.com</td>
+                    <td>23</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Cybersecurity, Programming</td>
+                    </tr>
+               </tbody>
+          </table>
+     </main>
+     
+     <footer>Created by Jerwin Nixo ~ BSIT-2A</footer>
+</body>
+</html>

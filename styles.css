@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+     --myfont: "Geist Mono", monospace;
+}
+
+*{
+     font-family: var(--myfont);
+     box-sizing: border-box;
+     margin: 0px;
+}
+
+body {
+     padding: 2rem 2rem;
+     background-color: #fff;
+}
+
+header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #FEEC37;
+     height: auto;
+     padding: 1.5rem;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+}
+
+header h1 {
+     margin: 0px;
+}
+
+
+.instructions {
+     padding: 2rem;
+     margin-top: 2rem;
+     height: auto;
+     background-color: #FF77B7;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+}
+
+.instructions h3 {
+     font-size: 2rem;
+     margin-bottom: 10px;
+}
+
+.instructions li {
+     font-size: 1.3rem;
+}
+
+.myForms {
+     display: flex;
+     gap: 2.5rem;
+     flex-direction: column;
+     margin-top: 2rem;
+     height: auto;
+     width: 100%;
+     background-color: #0D92F4;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+     padding: 3rem;
+}
+
+
+.myForms #inputs-1{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 0.5rem;
+     background-color: #FEEC37;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+     padding: 1rem;
+}
+
+#inputs-1 input{
+     font-size: 1.2rem;
+}
+
+
+.bottom-form {
+     display: flex;
+     justify-content: space-between;
+     gap: 2rem;
+}
+
+.myForms #inputs-2 {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     width: auto;
+     padding: 1rem;
+     background-color: #FEEC37;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+}
+
+#dropdown {
+     background-color: #0D92F4;
+     padding: 0.5rem;
+     outline: none;
+     font-size: 1.2rem;
+     color: #000;
+     border: 4px solid #000;
+     box-shadow: 5px 5px;
+     margin-bottom: 1rem;
+}
+
+
+#inputs-2 button{
+     margin: auto;
+     padding: 1rem;
+     background-color: #563A9C;
+     color: #000;
+     border: 4px solid #000;
+     box-shadow: 5px 5px;
+     font-size: 1.2rem;
+     font-weight: 800;
+}
+
+#inputs-2 label {
+     font-size: 1.2rem;
+}
+
+.myForms #inputs-3 {
+     width: 75%;
+     padding: 1rem;
+     background-color: #FEEC37;
+     border: 4px solid #000;
+     box-shadow: 10px 10px;
+}
+
+#inputs-3 label {
+     font-size: 1.2rem;
+}
+ 
+#full-name,
+#email,
+#age {
+     width: 100%;
+     padding: 0.5rem;
+     background-color: #FEEC37;
+     border: 2px solid #000;
+     color: #000;
+     outline: none;
+}
+
+/* table styles */
+.my-table {
+     margin-top: 2rem;
+     background-color: #FF7F3E;
+     border: 4px solid #000;
+     color: #000;
+     box-shadow: 10px 10px;
+     padding: 1rem 1rem;
+     overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+}
+
+.my-table h1 {
+     text-align: center;
+     margin: 1rem;
+}
+
+.my-table table {
+     border-collapse: collapse;
+     background-color: #FEEC37;
+     border: 2px solid #000;
+     color: #000;
+     box-shadow: 4px 3px;
+     width: 100%;
+     text-align: center;
+     border: 2px solid #000;
+}
+
+.my-table th, .my-table td{
+     border: 2px solid #000;
+     font-size: 1.3rem;
+}
+
+footer {
+     margin-top: 2rem;
+     text-align: center;
+     background-color:#8FD14F;
+     padding: 2rem;
+     font-weight: 800;
+     border: 4px solid #000;
+
+}
+
+@media (max-width: 580px) {
+     .bottom-form {
+          flex-direction: column;
+     }
+
+     .myForms {
+          padding: 1.5rem;
+     }
+
+     .myForms #inputs-3 {
+          width: 100%;
+     }
+
+     .my-table th, .my-table td {
+          font-size: 0.8rem;
+     }
+
+     #dropdown, #inputs-2 button{
+          width: 100%;
+          font-size: 4vw;
+     }
+
+     header h1 {
+          font-size: 7vw;
+          width: 100%
+     }
+
+     .instructions h3, .myForms h1{
+          font-size: 7vw;
+          margin-bottom: 10px;
+     }
+     
+     .instructions li {
+          font-size: 5.5vw;
+     }
+}
